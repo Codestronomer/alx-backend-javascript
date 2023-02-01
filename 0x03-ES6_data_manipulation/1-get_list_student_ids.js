@@ -1,5 +1,4 @@
 export default function getListStudentIds(obj) {
-  const arr = [];
-  obj.forEach((item) => arr.push(item.id));
+  const arr = obj.map((item) => item.id);
   return arr;
 }
